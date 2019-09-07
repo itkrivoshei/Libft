@@ -6,7 +6,7 @@
 #    By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/06 19:38:38 by jstaunto          #+#    #+#              #
-#    Updated: 2019/09/07 17:17:31 by jstaunto         ###   ########.fr        #
+#    Updated: 2019/09/07 20:24:02 by jstaunto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,9 @@ NAME	= libft.a
 FLAGS	= -Wall -Werror -Wextra -I. -c
 
 SRC		= 	ft_putchar.c \
+			ft_putchar_fd.c \
 			ft_putstr.c \
+			ft_putstr_fd.c \
 
 OBJ 	= $(SRC:.c=.o)
 
