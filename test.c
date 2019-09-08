@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 17:40:04 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/07 22:04:17 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/08 15:23:46 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,7 @@ int		main(void)
 {
 	ft_putchar('f');
 	ft_putstr("hello");
+	ft_putnbr_fd(248, 1);
+	ft_putnbr(999);
 	return (0);
 }
