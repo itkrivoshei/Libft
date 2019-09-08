@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/06 17:40:04 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/08 15:50:40 by jstaunto         ###   ########.fr       */
+/*   Created: 2019/09/08 15:30:51 by jstaunto          #+#    #+#             */
+/*   Updated: 2019/09/08 16:24:55 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		main(void)
+void	ft_putendl_fd(char const *s, int fd)
 {
-	ft_putchar('f');
-	ft_putstr("hello");
-	ft_putnbr_fd(248, 1);
-	ft_putnbr(999);
-	ft_putendl_fd("hello", 1);
-	return (0);
+	if (!s)
+		return ;
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }
