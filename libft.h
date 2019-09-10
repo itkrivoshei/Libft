@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 17:44:46 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/09 16:05:02 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/10 22:57:55 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,13 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+
+void	*ft_memset(void *meptr, int val, size_t num);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
+//void	*ft_memmove(void *dst, const void *src, size_t n);
+void	*ft_strdup(const char *src);
 
 void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);

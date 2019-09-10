@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/09 14:11:53 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/10 00:25:30 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/10 14:00:53 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,15 @@ char				*ft_itoa(int n)
 		nb = (unsigned int)(n * -1);
 	else
 		nb = (unsigned int)n;
-	sz = (unsigned int)size(nb);
-	if (!(str = (char*)malloc(sizeof(char) * (n < 0 ? (sz += 2) : (sz++)))))
+	sz = size(nb);
+	if (!(str = (char*)malloc(sizeof(char) * (n < 0 ? (sz += 2) : (++sz)))))
 		return (NULL);
 	str[--sz] = '\0';
 	(n < 0) ? (str[0] = '-') : 0;
 	while (nb >= 10)
 	{
 		str[--sz] = nb % 10 + '0';
-		n /= 10;
+		nb /= 10;
 	}
 	str[--sz] = nb % 10 + '0';
 	return (str);
