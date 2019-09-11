@@ -6,7 +6,7 @@
 #    By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/06 19:38:38 by jstaunto          #+#    #+#              #
-#    Updated: 2019/09/10 22:19:48 by jstaunto         ###   ########.fr        #
+#    Updated: 2019/09/11 21:30:17 by jstaunto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,9 +17,24 @@ FLAGS	= -Wall -Werror -Wextra -I. -c
 SRC		= 	ft_memset.c \
 			ft_bzero.c \
 			ft_memcpy.c \
+			ft_islower.c \
+			ft_strncpy.c \
+			ft_strncpy.c \
+			ft_isupper.c \
 			ft_memccpy.c \
+			ft_strcat.c \
+			ft_strcmp.c \
+			ft_toupper.c \
+			ft_tolower.c \
+			ft_isprint.c \
+			ft_strlen.c \
+			ft_isalpha.c \
+			ft_isalnum.c \
+			ft_isascii.c \
+			ft_isdigit.c \
 			ft_strdup.c \
 			ft_putchar.c \
+			ft_strcpy.c \
 			ft_putchar_fd.c \
 			ft_putstr.c \
 			ft_putstr_fd.c \
