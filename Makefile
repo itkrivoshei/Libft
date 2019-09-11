@@ -6,7 +6,7 @@
 #    By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/06 19:38:38 by jstaunto          #+#    #+#              #
-#    Updated: 2019/09/11 21:30:17 by jstaunto         ###   ########.fr        #
+#    Updated: 2019/09/11 22:33:20 by jstaunto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRC		= 	ft_memset.c \
 			ft_islower.c \
 			ft_strncpy.c \
 			ft_strncpy.c \
+			ft_memalloc.c \
 			ft_isupper.c \
 			ft_memccpy.c \
 			ft_strcat.c \
