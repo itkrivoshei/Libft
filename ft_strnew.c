@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/10 17:15:52 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/12 18:22:26 by jstaunto         ###   ########.fr       */
+/*   Created: 2019/09/12 22:11:05 by jstaunto          #+#    #+#             */
+/*   Updated: 2019/09/12 22:44:28 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char		*ft_strnew(size_t size)
 {
-	ft_memset(s, '\0', n);
+	return ((char *)ft_memalloc(sizeof(char) * (size + 1)));
 }
