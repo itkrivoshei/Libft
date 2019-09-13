@@ -6,7 +6,7 @@
 #    By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/06 19:38:38 by jstaunto          #+#    #+#              #
-#    Updated: 2019/09/12 23:09:51 by jstaunto         ###   ########.fr        #
+#    Updated: 2019/09/13 15:43:01 by jstaunto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,10 @@ SRC		= 	ft_memset.c \
 			ft_strcat.c \
 			ft_strcmp.c \
 			ft_toupper.c \
+			ft_strclr.c \
+			ft_striter.c \
+			ft_striteri.c \
+			ft_strmap.c \
 			ft_tolower.c \
 			ft_isprint.c \
 			ft_strlen.c \

@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 17:44:46 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/12 23:09:48 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/13 15:42:37 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ char	*ft_strncat(char *dst, const char *src, size_t n);
 char	*ft_strcpy(char *dst, const char *src);
 char	*ft_itoa(int n);
 char	*ft_strnew(size_t size);
+char	*ft_strmap(char const *s, char (*f)(char));
 
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_isalpha(int c);
@@ -37,6 +38,9 @@ int		ft_islower(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_striter(char *s, void (*f)(char *));
+void	ft_strclr(char *s);
 void	ft_strdel(char **as);
 void	ft_memdel(void **p);
 void	*ft_memset(void *meptr, int val, size_t num);
