@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 17:44:46 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/13 15:42:37 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/15 19:29:59 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-//void	*ft_memmove(void *dst, const void *src, size_t n);
 size_t	ft_strlen(const char *str);
 
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+char	*ft_strstr(const char *haystack, const char *needle);
 char	*ft_strncpy(char *dst, const char *src, size_t n);
 char	*ft_strcat(char *dst, const char *src);
 char	*ft_strncat(char *dst, const char *src, size_t n);
@@ -26,7 +27,18 @@ char	*ft_strcpy(char *dst, const char *src);
 char	*ft_itoa(int n);
 char	*ft_strnew(size_t size);
 char	*ft_strmap(char const *s, char (*f)(char));
+char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+//char	**ft_strsplit(char const *s, char c);
 
+int		ft_iswspace(char c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strnequ(char const *s1, char const *s2, size_t n);
+int		ft_strequ(char const *s1, char const *s2);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

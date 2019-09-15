@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/11 16:07:41 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/13 21:45:43 by jstaunto         ###   ########.fr       */
+/*   Created: 2019/09/15 12:46:34 by jstaunto          #+#    #+#             */
+/*   Updated: 2019/09/15 13:06:16 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isalnum(int c)
+char	**ft_strsplit(char const *s, char c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	char	**new;
+
+	while ()
 }
