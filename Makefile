@@ -6,7 +6,7 @@
 #    By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/06 19:38:38 by jstaunto          #+#    #+#              #
-#    Updated: 2019/09/15 23:19:15 by jstaunto         ###   ########.fr        #
+#    Updated: 2019/09/16 23:33:08 by jstaunto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,8 @@ NAME	= libft.a
 FLAGS	= -Wall -Werror -Wextra -I. -c
 
 SRC		= 	ft_strstr.c		\
+			ft_strlcat.c	\
+			ft_memmove.c	\
 			ft_atoi.c		\
 			ft_strnstr.c	\
 			ft_memset.c		\
@@ -65,6 +67,10 @@ SRC		= 	ft_strstr.c		\
 			ft_putendl_fd.c	\
 			ft_itoa.c		\
 			ft_iswspace.c	\
+			ft_isplwspace.c	\
+			ft_isallwspace.c\
+			ft_memcmp.c		\
+			ft_memchr.c		\
 
 OBJ 	= $(SRC:.c=.o)
 

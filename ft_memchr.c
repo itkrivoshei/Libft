@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/06 17:40:04 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/16 21:15:45 by jstaunto         ###   ########.fr       */
+/*   Created: 2019/09/16 16:04:04 by jstaunto          #+#    #+#             */
+/*   Updated: 2019/09/16 18:58:16 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		main(void)
+void	*ft_memchr(const void *str, int c, size_t n)
 {
-	char	src[] = "lorem";
-	char	*dest;
+	unsigned char *s;
 
-	dest = src;
-	ft_putstr(ft_memmove(dest, "hehehehe", 3));
-	return (0);
+	s = (unsigned char *)str;
+	while (n--)
+		if (*s != (unsigned char)c)
+			s++;
+		else
+			return (s);
+	return (NULL);
 }

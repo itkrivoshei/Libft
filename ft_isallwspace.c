@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_isallwspace.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/06 17:40:04 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/16 21:15:45 by jstaunto         ###   ########.fr       */
+/*   Created: 2019/09/16 13:35:17 by jstaunto          #+#    #+#             */
+/*   Updated: 2019/09/16 13:39:07 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		main(void)
+int		ft_isallwspace(char c)
 {
-	char	src[] = "lorem";
-	char	*dest;
-
-	dest = src;
-	ft_putstr(ft_memmove(dest, "hehehehe", 3));
-	return (0);
+	return (ft_iswspace(c) || ft_isplwspace(c));
 }
