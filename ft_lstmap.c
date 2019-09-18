@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/06 17:40:04 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/16 21:15:45 by jstaunto         ###   ########.fr       */
+/*   Created: 2019/09/18 20:44:27 by jstaunto          #+#    #+#             */
+/*   Updated: 2019/09/18 20:59:35 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		main(void)
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	char	src[] = "lorem";
-	char	*dest;
+	t_list	*new;
 
-	dest = src;
-	ft_putstr(ft_memmove(dest, "hehehehe", 3));
-	return (0);
+	if (lst)
+	{
+		new = f(lst);
+		new->next = ft_lstmap(lst->next, f);
+		return (new);
+	}
+	return (NULL);
 }

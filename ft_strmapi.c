@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/13 22:58:06 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/14 11:46:07 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/17 20:58:36 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*fresh;
 	size_t	i;
 
-	if (!(fresh = ft_strnew(ft_strlen(s))))
+	if (!s || !(fresh = ft_strnew(ft_strlen(s))))
 		return (NULL);
 	i = -1;
 	while (*(s + ++i))

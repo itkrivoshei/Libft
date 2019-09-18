@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/14 11:53:03 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/14 15:32:28 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/17 20:51:35 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 int		ft_strequ(char const *s1, char const *s2)
 {
+	if (!s1 && !s2)
+		return (1);
+	if (!s1 || !s2)
+		return (0);
 	return (ft_strcmp(s1, s2) == 0 ? 1 : 0);
 }
