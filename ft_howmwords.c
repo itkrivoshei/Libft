@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_howmwords.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/15 14:37:31 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/19 15:52:11 by jstaunto         ###   ########.fr       */
+/*   Created: 2019/09/20 13:36:15 by jstaunto          #+#    #+#             */
+/*   Updated: 2019/09/20 14:56:24 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+int			ft_howmwords(const char *str, char c)
 {
-	size_t	i;
+	size_t	sz;
+	int		i;
 
-	i = (int)ft_strlen(s) + 1;
-	while (i--)
-		if (*(s + i) == (char)c)
-			return ((char *)(s + i));
-	return (NULL);
+	sz = 0;
+	i = 0;
+	while (*str)
+	{
+		if (!i && *str != c)
+			sz++;
+		i = (*str == c) ? 0 : 1;
+		str++;
+	}
+	return (sz);
 }

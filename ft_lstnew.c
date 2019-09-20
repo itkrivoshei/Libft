@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 12:00:14 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/18 21:25:10 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/20 19:03:42 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_list		*ft_lstnew(void const *content, size_t content_size)
 	}
 	else
 	{
-		if (!(new->content = ft_memalloc(sizeof(content_size))))
+		if (!(new->content = malloc(content_size)))
 		{
 			free(new);
 			return (NULL);

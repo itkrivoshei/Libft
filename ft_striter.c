@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/13 14:31:32 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/17 20:45:10 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/19 18:04:36 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 void	ft_striter(char *s, void (*f)(char *))
 {
-	if (!s || !f)
-		return ;
-	while (*s)
-		f(s++);
+	if (s && f)
+		while (*s)
+			f(s++);
 }

@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 17:44:46 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/18 22:15:25 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/20 13:45:26 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strcmp(const char *s1, const char *s2);
+int					ft_howmwords(const char *str, char c);
 int					ft_atoi(const char *str);
 int					ft_isallwspace(char c);
 int					ft_isplwspace(char c);

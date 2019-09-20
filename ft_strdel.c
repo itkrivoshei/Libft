@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/12 22:34:30 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/12 23:09:43 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/19 17:55:53 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 void	ft_strdel(char **as)
 {
-	if (!as || !*as)
-		return ;
-	free(*as);
-	*as = NULL;
+	ft_memdel((void**)as);
 }

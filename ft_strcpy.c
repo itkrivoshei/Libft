@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/11 12:51:28 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/11 13:30:51 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/19 00:34:44 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,5 @@
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-	char	*s;
-
-	s = dst;
-	while (*src)
-		*dst++ = *src++;
-	*dst = '\0';
-	return (s);
+	return (ft_memcpy(dst, src, ft_strlen(src) + 1));
 }
