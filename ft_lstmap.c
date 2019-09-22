@@ -6,21 +6,45 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 20:44:27 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/18 20:59:35 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/09/21 23:37:09 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+static void		clean(t_list *todel)
 {
-	t_list	*new;
+	t_list		*tmp;
 
-	if (lst)
+	while (todel)
 	{
-		new = f(lst);
-		new->next = ft_lstmap(lst->next, f);
-		return (new);
+		tmp = todel->next;
+		ft_memdel((void **)&todel);
+		todel = tmp;
 	}
-	return (NULL);
+}
+
+t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+{
+	t_list		*new;
+	t_list		*fst;
+
+	if (!lst || !f)
+		return (NULL);
+	if (!(new = ft_lstnew(lst->content, lst->content_size)))
+		return (NULL);
+	new = f(new);
+	fst = new;
+	while (lst->next)
+	{
+		lst = lst->next;
+		if (!(new->next = ft_lstnew(lst->content, lst->content_size)))
+		{
+			clean(fst);
+			return (NULL);
+		}
+		new->next = f(new->next);
+		new = new->next;
+	}
+	return (fst);
 }
