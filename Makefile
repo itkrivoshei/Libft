@@ -6,9 +6,11 @@
 #    By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/06 19:38:38 by jstaunto          #+#    #+#              #
-#    Updated: 2019/09/23 00:15:57 by jstaunto         ###   ########.fr        #
+#    Updated: 2019/09/23 15:17:29 by jstaunto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+.PHONY: NAME CC INCL FLAGS SRC OBJ all clean fclean re
 
 NAME	= libft.a
 CC		= gcc
