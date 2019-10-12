@@ -6,7 +6,7 @@
 /*   By: jstaunto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 21:51:33 by jstaunto          #+#    #+#             */
-/*   Updated: 2019/09/08 16:16:15 by jstaunto         ###   ########.fr       */
+/*   Updated: 2019/10/12 15:20:06 by jstaunto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,5 @@
 void	ft_putstr_fd(char const *s, int fd)
 {
 	if (s != NULL)
-		while (*s)
-			write(fd, &(*s++), 1);
+		write(fd, s, ft_strlen(s));
 }
