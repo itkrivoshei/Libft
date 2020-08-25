@@ -1,1 +1,16 @@
-# Libft
+# Libft School 21 project
+My own C library for School 21 projects
+## Build
+- To compile
+  - make `(It generates a static C library named libft.a)`
+- To remove objects:
+  - make clean
+- To remove objects and binary file (program):
+  - make fclean
+- To re-compile:
+  - make re
+## Usage
+The main header file is called libft.h, which can be included in your source files like this:
+```
+#include "libft.h" // include libft functions
+```
