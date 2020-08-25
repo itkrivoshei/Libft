@@ -1,8 +1,8 @@
 # Libft School 21 project
 My own C library for School 21 projects
 ## Build
-- To compile
-  - `make` (It generates a static C library named libft.a)
+- To compile and generate a static C library named libft.a
+  - `make`
 - To remove objects:
   - `make clean`
 - To remove objects and binary file (program):
