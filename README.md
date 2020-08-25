@@ -1,5 +1,9 @@
 # Libft School 21 project
 My own C library for School 21 projects.
+## Installation
+```
+git clone https://github.com/IT-Krivoshey/Libft.git
+```
 ## Build
 - To compile and generate a static C library named libft.a
 	- `make`
