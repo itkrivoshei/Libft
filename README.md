@@ -1,5 +1,5 @@
 # Libft School 21 project
-My own C library for School 21 projects
+My own C library for School 21 projects.
 ## Build
 - To compile and generate a static C library named libft.a
   - `make`
@@ -14,3 +14,5 @@ The main header file is called libft.h, which can be included in your source fil
 ```
 #include "libft.h" // include libft functions
 ```
+## License
+This project is licensed under the LGPLv3 License - see the LICENSE file for details.
