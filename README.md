@@ -19,4 +19,4 @@ The main header file is called libft.h, which can be included in your source fil
 #include "libft.h" // include libft functions
 ```
 ## License
-This project is licensed under the LGPLv3 License - see the LICENSE file for details.
+This project is licensed under the LGPLv3 License - see the [LICENSE](https://github.com/IT-Krivoshey/Libft/blob/master/LICENSE) file for details.
