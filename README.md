@@ -1,5 +1,5 @@
-# Libft School 21 project
-My own C library for School 21 projects.
+# Libft [School 21](https://21-school.ru/) project
+My own C library for [School 21](https://21-school.ru/) projects.
 ## Installation
 ```
 git clone https://github.com/IT-Krivoshey/Libft.git
