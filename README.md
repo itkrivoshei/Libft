@@ -9,7 +9,7 @@ git clone https://github.com/IT-Krivoshey/Libft.git
 	- `make`
 - To remove objects:
 	- `make clean`
-- To remove objects and binary file (program):
+- To remove objects and binary file:
 	- `make fclean`
 - To re-compile:
 	- `make re`
