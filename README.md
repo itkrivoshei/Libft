@@ -14,7 +14,7 @@ git clone https://github.com/IT-Krivoshey/Libft.git
 - To re-compile:
 	- `make re`
 ## Usage
-The main header file is called libft.h, which can be included in your source files like this:
+The main header file - libft.h, which can be included in your source files like this:
 ```
 #include "libft.h" // include libft functions
 ```
