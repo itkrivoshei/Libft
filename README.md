@@ -7,7 +7,7 @@ git clone https://github.com/IT-Krivoshey/Libft.git
 ## Build
 - To compile and generate a static C library named libft.a
 	- `make`
-- To remove objects:
+- To remove obj:
 	- `make clean`
 - To remove objects and binary file:
 	- `make fclean`
